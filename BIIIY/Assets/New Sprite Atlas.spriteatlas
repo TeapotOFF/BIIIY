@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: New Sprite Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 0
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: -1553648911, guid: 20dea2b0244551e4ca7d065d2ad4c16d, type: 3}
+    - {fileID: 416091933, guid: 20dea2b0244551e4ca7d065d2ad4c16d, type: 3}
+    - {fileID: -753075938, guid: 20dea2b0244551e4ca7d065d2ad4c16d, type: 3}
+    - {fileID: 470919740, guid: 20dea2b0244551e4ca7d065d2ad4c16d, type: 3}
+    - {fileID: -1020422050, guid: 20dea2b0244551e4ca7d065d2ad4c16d, type: 3}
+    - {fileID: 2800000, guid: 20dea2b0244551e4ca7d065d2ad4c16d, type: 3}
+    - {fileID: 21300000, guid: 37d1bdb3e1de647ae915d01a2b7def15, type: 3}
+    - {fileID: 21300000, guid: 37d1bdb3e1de647ae915d01a2b7def15, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 421045248, guid: 20dea2b0244551e4ca7d065d2ad4c16d, type: 3}
+  - {fileID: 1113517250, guid: 20dea2b0244551e4ca7d065d2ad4c16d, type: 3}
+  - {fileID: -429632082, guid: 20dea2b0244551e4ca7d065d2ad4c16d, type: 3}
+  - {fileID: 1612461051, guid: 20dea2b0244551e4ca7d065d2ad4c16d, type: 3}
+  - {fileID: -1220325273, guid: 20dea2b0244551e4ca7d065d2ad4c16d, type: 3}
+  - {fileID: 1864783253, guid: 20dea2b0244551e4ca7d065d2ad4c16d, type: 3}
+  - {fileID: 1259590065, guid: 20dea2b0244551e4ca7d065d2ad4c16d, type: 3}
+  - {fileID: 868704229, guid: 20dea2b0244551e4ca7d065d2ad4c16d, type: 3}
+  - {fileID: -91478351, guid: 20dea2b0244551e4ca7d065d2ad4c16d, type: 3}
+  - {fileID: 1715613611, guid: 20dea2b0244551e4ca7d065d2ad4c16d, type: 3}
+  - {fileID: -378479169, guid: 20dea2b0244551e4ca7d065d2ad4c16d, type: 3}
+  - {fileID: 1493391754, guid: 20dea2b0244551e4ca7d065d2ad4c16d, type: 3}
+  - {fileID: 722983898, guid: 20dea2b0244551e4ca7d065d2ad4c16d, type: 3}
+  - {fileID: -1553648911, guid: 20dea2b0244551e4ca7d065d2ad4c16d, type: 3}
+  - {fileID: 1438844560, guid: 20dea2b0244551e4ca7d065d2ad4c16d, type: 3}
+  - {fileID: 677190001, guid: 20dea2b0244551e4ca7d065d2ad4c16d, type: 3}
+  - {fileID: 416091933, guid: 20dea2b0244551e4ca7d065d2ad4c16d, type: 3}
+  - {fileID: 470919740, guid: 20dea2b0244551e4ca7d065d2ad4c16d, type: 3}
+  - {fileID: -753075938, guid: 20dea2b0244551e4ca7d065d2ad4c16d, type: 3}
+  - {fileID: 722501376, guid: 20dea2b0244551e4ca7d065d2ad4c16d, type: 3}
+  - {fileID: 2142791071, guid: 20dea2b0244551e4ca7d065d2ad4c16d, type: 3}
+  - {fileID: -1020422050, guid: 20dea2b0244551e4ca7d065d2ad4c16d, type: 3}
+  - {fileID: -2106211177, guid: 20dea2b0244551e4ca7d065d2ad4c16d, type: 3}
+  - {fileID: -1881273407, guid: 20dea2b0244551e4ca7d065d2ad4c16d, type: 3}
+  - {fileID: 21300000, guid: 37d1bdb3e1de647ae915d01a2b7def15, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - tileset2_19
+  - tileset2_18
+  - tileset2_13
+  - tileset2_12
+  - tileset2_11
+  - tileset2_10
+  - tileset2_17
+  - tileset2_16
+  - tileset2_15
+  - tileset2_14
+  - tileset2_22
+  - tileset2_23
+  - tileset2_20
+  - tileset2_21
+  - tileset2_8
+  - tileset2_9
+  - tileset2_0
+  - tileset2_1
+  - tileset2_2
+  - tileset2_3
+  - tileset2_4
+  - tileset2_5
+  - tileset2_6
+  - tileset2_7
+  - buildings-bg
+  m_RenderDataMap: {}
+  m_Tag: New Sprite Atlas
+  m_IsVariant: 0
