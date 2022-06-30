@@ -1,2 +1,2 @@
 # BIIIY
-game with MetaMask wallet support
+Game with MetaMask wallet support
