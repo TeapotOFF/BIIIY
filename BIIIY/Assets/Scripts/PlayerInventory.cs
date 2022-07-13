@@ -9,7 +9,6 @@ public class PlayerInventory : MonoBehaviour
 {
     public Dictionary<int, int> dictionaryItems = new Dictionary<int, int>();
     private string _path;
-    private CardAction _cardAction;
     private void Start()
     {
         _path = Path.Combine(Application.dataPath, "SaveItem.json");

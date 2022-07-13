@@ -5,10 +5,9 @@ using UnityEngine;
 public class PlayerAnimation : MonoBehaviour
 {
     [SerializeField] private Transform _enemyDamage;
-    private Animator _card;
-    private Vector2 _enemyDamageOld;
     [SerializeField] private Animator _playerAnimator;
     [SerializeField] private Animator _enemy;
+    private Vector2 _enemyDamageOld;
     void Start()
     {
         _enemyDamageOld = _enemyDamage.position;
@@ -19,8 +18,8 @@ public class PlayerAnimation : MonoBehaviour
     }
     public void EnemyDamageAnimation()
     {
-        _enemyDamage.position = new Vector2(Random.Range(_enemyDamageOld.x - 0.20f, _enemyDamageOld.x + 0.20f), 
-        Random.Range(_enemyDamageOld.y - 0.20f, _enemyDamageOld.y + 0.20f));
+        _enemyDamage.position = new Vector2(Random.Range(_enemyDamageOld.x - 0.40f, _enemyDamageOld.x + 0.40f), 
+        Random.Range(_enemyDamageOld.y - 0.40f, _enemyDamageOld.y + 0.40f));
         _enemy.SetTrigger("isDamage");
     }
     public void EnemyDeathAnimation()

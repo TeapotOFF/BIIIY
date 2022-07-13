@@ -34,7 +34,7 @@ public class CardAction : MonoBehaviour
                 }
                 else if ((rayHit.collider.tag == "Card")&&isActive)
                 {
-                    Debug.Log(onItemAdd);
+                    Destroy(rayHit.collider.gameObject);
                     onItemAdd.Invoke(_thisItem);
                 }
             }
@@ -50,6 +50,6 @@ public class CardAction : MonoBehaviour
     }
     void MoveCard()
     {
-        transform.position = Vector3.MoveTowards(transform.position, new Vector3(-1.03f, 1.14f, 0f), Time.deltaTime*2f);
+        transform.position = Vector3.MoveTowards(transform.position, new Vector3(-1.03f, 1.14f, 0f), Time.deltaTime*100f);
     }
 }

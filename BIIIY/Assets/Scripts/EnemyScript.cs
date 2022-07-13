@@ -32,12 +32,13 @@ public class EnemyScript : MonoBehaviour
         {
             _enemyAnimation.EnemyDeathAnimation();
             dropCard?.Invoke();
-            SpawnEnemy();
-            Destroy(gameObject);
+            gameObject.SetActive(false);
+            Invoke("SpawnEnemy", 2f);
         }
     }
     public void SpawnEnemy()
     {
         GameObject _enemy = (GameObject)Instantiate(_enemyPrefab);
+        Destroy(this.gameObject);
     }
 }
