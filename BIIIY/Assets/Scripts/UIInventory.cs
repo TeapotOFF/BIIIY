@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class UIInventory : MonoBehaviour
 {
+    
     public void CloseInventory()
     {
         gameObject.SetActive(false);

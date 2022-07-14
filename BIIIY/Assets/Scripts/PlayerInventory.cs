@@ -7,50 +7,32 @@ using Newtonsoft.Json;
 
 public class PlayerInventory : MonoBehaviour
 {
-    public Dictionary<int, int> dictionaryItems = new Dictionary<int, int>();
-    private string _path;
-    private void Start()
-    {
-        _path = Path.Combine(Application.dataPath, "SaveItem.json");
-        LoadInventory();
-    }
-    public void AddInInventory(Item item)
-    {
-        if (dictionaryItems.ContainsKey(item.IDItem))
-        {
-            dictionaryItems[item.IDItem] = dictionaryItems[item.IDItem] + 1;
-        }
-        else
-        {
-            dictionaryItems.Add(item.IDItem, 1);
-        }
-        SaveInventory();
-    }
-    /*
-     * json file:
-     * {IDItem: int; CountItem: int}
-     * 
-     * use this: https://www.newtonsoft.com/json/help/html/DeserializeWithJsonSerializerFromFile.htm
-     * 
-     * comment: need wallet number and and its verification
-     *
-     */
-    private void SaveInventory()
-    {
-        string json = JsonConvert.SerializeObject(dictionaryItems, Formatting.Indented);
-        File.WriteAllText(_path, JsonConvert.SerializeObject(dictionaryItems));
-    }
-    private void LoadInventory()
-    {
-        string json = File.ReadAllText(_path);
-        dictionaryItems = JsonConvert.DeserializeObject<Dictionary<int, int>>(json);
-        ShowDictionary();
-    }
-    private void ShowDictionary() // test methhod. after complete inventory, delete this method
-    {
-        foreach (var item in dictionaryItems)
-        {
-            Debug.Log(item);
+    List<Item> cards;
+    //public Dictionary<int, int> dictionaryItems = new Dictionary<int, int>();
+    
+    public void AddCard(string id, Texture image, string name, string description, string power, int count){
+        for(int i=0;i<count;i++){
+            Item card = new Item(){
+                IDItem=System.Convert.ToInt32(id),
+                Name=name,
+                Icon=Sprite.Create((Texture2D)image, new Rect(0,0, image.width,image.height), Vector2.zero),
+                Power=power
+            };
+            cards.Add(card);
+            Draw();
         }
     }
+    public void DeleteItem(string id){
+        foreach ( Item card in cards){
+            if (card.IDItem==System.Convert.ToInt32(id)) {
+                cards.Remove(card);
+                break;
+            }
+        }
+        Draw();
+    }
+    private void Draw(){
+        //отрисовка
+    }
+
 }
