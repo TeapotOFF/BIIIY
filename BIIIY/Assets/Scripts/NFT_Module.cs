@@ -54,7 +54,7 @@ public class NFT_Module : MonoBehaviour
             }
         }*/
     }
-
+    //ыы
     async void CreateItem(NFT token){
         Metadata metadata;
         Texture texture;
