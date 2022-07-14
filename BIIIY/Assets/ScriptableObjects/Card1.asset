@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d04c5504e1fcdea4399b453c07d00350, type: 3}
+  m_Name: Card1
+  m_EditorClassIdentifier: 
+  Icon: {fileID: 21300000, guid: 041f56d6a022446e8b09e8a5be7f79ab, type: 3}
+  Name: Girl
+  IDItem: 1
+  Price: 200
+  Power: 2
+<<<<<<< HEAD
+  Prefab: {fileID: 6382086602411506055, guid: 0ca6e1d604ee6ba4fa6e7c0ef2964cd1, type: 3}
+=======
+>>>>>>> a47c404bc3bbda32f3a9f26bd517f3f3c3f4e2f8

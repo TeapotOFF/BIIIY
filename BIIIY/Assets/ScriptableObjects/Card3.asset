@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d04c5504e1fcdea4399b453c07d00350, type: 3}
+  m_Name: Card3
+  m_EditorClassIdentifier: 
+  Icon: {fileID: 21300000, guid: 7da37e84137ad4a2c8c204284c5dc000, type: 3}
+  Name: YellowMoto
+  IDItem: 3
+  Price: 600
+  Power: 7
+<<<<<<< HEAD
+  Prefab: {fileID: 2136862840814573036, guid: 90ae2f58acbb31340b8ac4056c026ea2, type: 3}
+=======
+>>>>>>> a47c404bc3bbda32f3a9f26bd517f3f3c3f4e2f8
