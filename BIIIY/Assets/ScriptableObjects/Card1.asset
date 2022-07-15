@@ -17,3 +17,4 @@ MonoBehaviour:
   IDItem: 1
   Price: 200
   Power: 2
+  Prefab: {fileID: 6743338174644190254, guid: 2713bd56632ebff498761934473e68ce, type: 3}

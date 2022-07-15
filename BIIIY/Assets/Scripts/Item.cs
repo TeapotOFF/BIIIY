@@ -11,4 +11,5 @@ public class Item : ScriptableObject
     public int IDItem;
     public string Price;
     public string Power;
+    public GameObject Prefab;
 }
