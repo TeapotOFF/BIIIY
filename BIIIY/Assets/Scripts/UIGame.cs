@@ -19,11 +19,26 @@ public class UIGame : MonoBehaviour
         _inventory.SetActive(true);
         Time.timeScale = 0;
     }
+    public void AddCardInInventory(StateObject item)
+    {
+        GameObject _cardClone = (GameObject)Instantiate(_cardPrefab, _inventoryGrid.transform);
+        _cardClone.transform.Find("Mask").transform.Find("ImageCard").GetComponent<Image>().sprite = item.Icon;
+        cardInInventory.Add(_cardClone);
+    }
     public void AddCardInInventory(Item item)
     {
         GameObject _cardClone = (GameObject)Instantiate(_cardPrefab, _inventoryGrid.transform);
         _cardClone.transform.Find("Mask").transform.Find("ImageCard").GetComponent<Image>().sprite = item.Icon;
         cardInInventory.Add(_cardClone);
+    }
+    public void DeleteCardFromInventory(StateObject item){
+        foreach(GameObject elem in cardInInventory){
+            if (elem.GetComponent<StateObject>().id==item.id) {
+                cardInInventory.Remove(elem);
+                Destroy(gameObject);
+                return;
+                }
+        }
     }
     public void PointEnter()
     {

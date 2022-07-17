@@ -19,7 +19,7 @@ public class NFT_Module : MonoBehaviour
     PlayerInventory inventory;
     string chain = "ethereum";
     string network = "rinkeby";
-    [SerializeField] string contract = "0x2ebecabbbe8a8c629b99ab23ed154d74cd5d4342";
+    [SerializeField] string contract = "0x3C99b2C705f77dd8e3b26D03001fE44AedAb72b1";
     string account;
     int first = 500;
     int skip = 0;
@@ -67,7 +67,7 @@ public class NFT_Module : MonoBehaviour
             texture = DownloadHandlerTexture.GetContent(webRequest);
         }
         
-        inventory.AddCard(token.tokenId, texture, metadata.name, metadata.description, metadata.attributes[0].value, System.Convert.ToInt32(token.balance));
+        //inventory.AddCard(token.tokenId, texture, metadata.name, metadata.description, metadata.attributes[0].value, System.Convert.ToInt32(token.balance));
     }
 
     void DeleteItem(NFT token){

@@ -8,7 +8,7 @@ public class Item : ScriptableObject
 {
     public Sprite Icon;
     public string Name;
-    public int IDItem;
+    public string IDItem;
     public string Price;
     public string Power;
     public GameObject Prefab;

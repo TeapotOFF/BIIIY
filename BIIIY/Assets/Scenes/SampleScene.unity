@@ -1150,6 +1150,51 @@ Transform:
   m_Father: {fileID: 697009899}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &197387242
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 197387244}
+  - component: {fileID: 197387243}
+  m_Layer: 0
+  m_Name: NFT_Script
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &197387243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197387242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08de6f18424666a408a10611feed9bb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contract: 0x3C99b2C705f77dd8e3b26D03001fE44AedAb72b1
+--- !u!4 &197387244
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197387242}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.3205389, y: -0.1182691, z: 2.5320878}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &198165707
 GameObject:
   m_ObjectHideFlags: 0
@@ -5151,6 +5196,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01d1dc2db4ef33e4c91c4ad6cf08800b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Icon: {fileID: 0}
+  Name: 
+  id: 
+  Price: 
+  Power: 
   isActive: 0
 --- !u!1 &910585081
 GameObject:
@@ -5448,6 +5498,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01d1dc2db4ef33e4c91c4ad6cf08800b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Icon: {fileID: 0}
+  Name: 
+  id: 
+  Price: 
+  Power: 
   isActive: 0
 --- !u!1 &961898639
 GameObject:
@@ -5745,6 +5800,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01d1dc2db4ef33e4c91c4ad6cf08800b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Icon: {fileID: 0}
+  Name: 
+  id: 
+  Price: 
+  Power: 
   isActive: 0
 --- !u!1 &1013954179
 GameObject:
@@ -7065,6 +7125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3f9c52c60285f146ba6b2d0cde3a5e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  uIGame: {fileID: 1469493484}
 --- !u!114 &1143299718 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1191252180858458381, guid: 8c965783ec71a28469b0519e7ca464af, type: 3}
