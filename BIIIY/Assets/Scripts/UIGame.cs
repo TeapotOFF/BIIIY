@@ -7,6 +7,8 @@ public class UIGame : MonoBehaviour
 {
     [SerializeField] private GameObject _inventory;
     [SerializeField] private GameObject _inventoryGrid;
+    [SerializeField] private GameLogic _gameLogic;
+    [HideInInspector] public List<GameObject> cardInInventory;
     private Object _cardPrefab;
     private void Start()
     {
@@ -19,8 +21,12 @@ public class UIGame : MonoBehaviour
     }
     public void AddCardInInventory(Item item)
     {
-        Debug.Log("Add card ");
         GameObject _cardClone = (GameObject)Instantiate(_cardPrefab, _inventoryGrid.transform);
         _cardClone.transform.Find("Mask").transform.Find("ImageCard").GetComponent<Image>().sprite = item.Icon;
+        cardInInventory.Add(_cardClone);
+    }
+    public void PointEnter()
+    {
+        _gameLogic.gameInProgerss = false;
     }
 }

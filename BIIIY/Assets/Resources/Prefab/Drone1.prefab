@@ -151,8 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1aad518fcb6f864b8d049c9fb123e70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameLogick: {fileID: 1191252180858458381, guid: 8c965783ec71a28469b0519e7ca464af, type: 3}
-  health: 10
+  health: 15
 --- !u!114 &8392749777634558350
 MonoBehaviour:
   m_ObjectHideFlags: 0

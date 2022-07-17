@@ -30,7 +30,6 @@ public class DropSystem : MonoBehaviour
         GameObject _cardClone = (GameObject)Instantiate(_cardPrefab, _dropUI.transform);
         _cardClone.GetComponent<CardAction>()._thisItem = RandomItem();
         _cardClone.transform.Find("Mask").transform.Find("ImageCard").GetComponent<Image>().sprite = _cardClone.GetComponent<CardAction>()._thisItem.Icon;
-        //_cardClone.GetComponent<CardAction>().onItemAdd += _playerInventory.AddInInventory;
         _cardClone.GetComponent<CardAction>().onItemAdd += _uiGame.AddCardInInventory;
     }
 }

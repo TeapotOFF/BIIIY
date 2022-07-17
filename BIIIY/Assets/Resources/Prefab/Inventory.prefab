@@ -387,7 +387,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3680276847863229523}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3680276847964768354}
+        m_TargetAssemblyTypeName: UIInventory, Assembly-CSharp
+        m_MethodName: AcceptSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3680276847964768352
 GameObject:
   m_ObjectHideFlags: 0
@@ -446,6 +458,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  uiGame: {fileID: 0}
   dropSystem: {fileID: 8392749777634558350, guid: 8404b136e6272a84ea721f8800931c20, type: 3}
 --- !u!1 &3680276848301654871
 GameObject:

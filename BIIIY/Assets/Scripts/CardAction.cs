@@ -11,6 +11,7 @@ public class CardAction : MonoBehaviour
     private bool isActive = false;
     private Vector3 velocity = Vector3.zero;
 
+
     public System.Action<Item> onItemAdd;
 
     private void Awake()

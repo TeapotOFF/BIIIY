@@ -4,41 +4,37 @@ using UnityEngine;
 
 public class EnemyScript : MonoBehaviour
 {
-    [SerializeField] private GameLogick _gameLogick;
+    private GameLogic _gameLogick;
     private PlayerAnimation _enemyAnimation;
-    private Object _enemyPrefab;
     public int health = 10;
 
     public System.Action dropCard;
 
     private void Awake()
     {
+        _gameLogick = GameObject.Find("Player").GetComponent<GameLogic>();
         _enemyAnimation = GameObject.Find("EnemyDamageEffect").GetComponent<PlayerAnimation>();
-        GameLogick.takeDamageEvent += TakeDamage;
+        _gameLogick.takeDamageEvent += TakeDamage;
     }
     private void Start()
     {
         _enemyAnimation = GameObject.Find("EnemyDamageEffect").GetComponent<PlayerAnimation>();
-        _enemyPrefab = Resources.Load("Prefab/Drone1");
     }
-    public void TakeDamage()
+    public void TakeDamage(int damage)
     {
-        health -= 1;
+        health -= damage;
         EnemyDeath();
     }
     private void EnemyDeath()
     {
-        if (health == 0)
+        Debug.Log(health);
+        if (health <= 0)
         {
             _enemyAnimation.EnemyDeathAnimation();
             dropCard?.Invoke();
-            gameObject.SetActive(false);
-            Invoke("SpawnEnemy", 2f);
+            _gameLogick.SpawnCorotine(2);
+            _gameLogick.takeDamageEvent -= TakeDamage;
+            Destroy(gameObject);
         }
-    }
-    public void SpawnEnemy()
-    {
-        GameObject _enemy = (GameObject)Instantiate(_enemyPrefab);
-        Destroy(this.gameObject);
     }
 }
